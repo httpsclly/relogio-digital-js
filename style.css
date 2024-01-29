@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: radial-gradient( circle farthest-corner at 0.8% 3.1%,  rgba(255,188,224,1) 0%, rgba(170,165,255,1) 46%, rgba(165,255,205,1) 100.2% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Relógio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width:  550px;
+    background: #FFF;
+    border-radius: 20px;
+    box-shadow: 0px 8px 10px rgba(0,0,0,.5);
+}
+
+.Relógio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    background: rgba(0,0,0,0.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,.7);
+    border-radius: 12px;
+}
+
+.Relógio span{
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.Relógio span.tempo {
+    font-size:10px ;
+
+}
+
+/*/github/*/
+.Btn {
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .4s;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(31, 31, 31);
+    overflow: hidden;
+  }
+  
+  .svgIcon {
+    transition-duration: .3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: .4s;
+  }
+  
+  .Btn:hover {
+    width: 110px;
+    transition-duration: .4s;
+    border-radius: 30px;
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: .4s;
+  }
+  
+  .Btn:hover .svgIcon {
+    opacity: 0;
+    transition-duration: .3s;
+  }
+ .button {
+  position: relative;
+  list-style: none;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: grab;
+}
+
+.button .svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all 0.3s;
+}
+
+.button .svg2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  fill: #f4af03;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.button:hover .svg {
+  fill: #f4af03;
+}
+
+.button:hover .svg2 {
+  opacity: 1;
+  fill: #f4af03;
+}
+
